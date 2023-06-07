@@ -1,0 +1,239 @@
+:root{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+   
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(5, 5, 5);
+    width: 100%;
+    
+}
+h1{
+    padding: 10px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+    gap: 10rem;
+    flex-direction: row;
+}
+nav ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+}
+nav li{
+    display: inline;
+}
+nav li a{
+    background-color: rgb(63, 66, 68);
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(238, 235, 235);
+    
+}
+nav li a:hover{
+    background-color: gray;
+}
+h2{
+    text-align: center;
+    padding: 1rem;
+
+}
+h3{
+    background-color: rgb(226, 207, 207);
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   padding-bottom: 4rem;
+   
+} 
+ article{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    
+} 
+.primer-texto{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+}
+.segundo-texto{
+    border: 1px solid gray ;
+    margin: 10px;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.content{
+    border: 1px solid gray;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+.segundo-titulo{
+   display: flex;
+   justify-content: center;
+   padding: 0;
+   margin: 1rem;
+
+}
+.tercer-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 1rem;
+   
+}
+.texto-3{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    
+}
+.img-3{
+    width:50% ;
+    
+}
+/* estilo de galeria.html */
+.img-surf{
+    margin: 2rem;
+    width: 50%;
+    height: 30%;
+}
+/* Estilos contacto */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem;
+    background-color: #8b7a7a;
+    
+
+}
+fieldset{
+    width: 50%;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    gap: 4rem;
+}
+.button{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-80%, -40%);
+     margin: 10px;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     background-color: #57dfe9;
+     cursor: pointer;
+}
+.button:hover{
+    background-color: #e7e5e5;
+}
+footer{
+  position: fixed;
+  bottom: 0 ;
+  width: 100%;
+  background-color: #a4acb1;
+  text-align: center; 
+  margin-right: auto;
+ }
+ @media (max-width:500px) {
+    
+    nav {
+        flex-wrap: wrap;
+      }
+      
+      nav ul {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+      }
+      
+      nav li {
+        white-space: nowrap;
+      }
+    article{
+       flex-direction: column;
+       width: 50%;
+    }
+    
+    .img-3{
+      width: 100%;
+    }
+    .img-surf{
+         display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+    .button{
+        margin: 2rem;
+        transform: translate(-120%, -80%);
+    }
+     footer{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+    }
+ } 
+ @media (max-width:900px){
+    article{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-surf{
+        width: 50%;
+    }
+}
+ @media (max-width:1080px){
+    .texto-3{
+       flex-direction: column;
+    }
+    .img3{
+        width: 100%;
+    }
+ }
