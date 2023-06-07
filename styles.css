@@ -157,7 +157,7 @@ fieldset{
 }
 .button{
     position: absolute;
-    top: 75%;
+    top: 73%;
     left: 50%;
     transform: translate(-80%, -40%);
      margin: 10px;
@@ -177,14 +177,21 @@ footer{
   text-align: center; 
   margin-right: auto;
  }
+
  @media (max-width:500px) {
-    
+     header{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
     nav {
         flex-wrap: wrap;
+        position: relative;
+        left: 5px; ;
       }
       
       nav ul {
-        width: 80%;
+        width: 60%;
         display: flex;
         justify-content: center;
         gap: 0.2rem;
@@ -210,8 +217,11 @@ footer{
         width: 100%;
     }
     .button{
-        margin: 2rem;
-        transform: translate(-120%, -80%);
+        margin: 1.5rem;
+        position: absolute;
+        top: 79%;
+        left: 43%;
+        
     }
      footer{
         display: flex;
@@ -235,5 +245,8 @@ footer{
     }
     .img3{
         width: 100%;
+    }
+    .button{
+    transform: translate(-50% );
     }
  }
