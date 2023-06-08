@@ -180,22 +180,20 @@ footer{
 
  @media (max-width:500px) {
      header{
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       flex-direction: column;
+    }
+     h1{
+        margin: 0;
      }
-    nav {
-        flex-wrap: wrap;
-        position: relative;
-        left: 5px; ;
-      }
+     nav {
+       flex-direction: column;
+      } 
       
       nav ul {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        gap: 0.2rem;
-      }
+       display: flex;
+       gap: 1rem;
+       background-color: #79eef7;
+    }
       
       nav li {
         white-space: nowrap;
@@ -219,7 +217,7 @@ footer{
     .button{
         margin: 1.5rem;
         position: absolute;
-        top: 79%;
+        top: 73%;
         left: 43%;
         
     }
